@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: rgb(235, 235, 235);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dan.danpagetopage.SixthController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="65.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Button fx:id="Back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#ButtonBackOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Назад" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Logout" layoutX="529.0" layoutY="16.0" mnemonicParsing="false" onAction="#ButtonLogoutOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Logout" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="48.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Label layoutX="157.0" layoutY="370.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="Ok" layoutX="253.0" layoutY="182.0" mnemonicParsing="false" onAction="#ButtonOkOnAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;" text="Ок" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="17.0" />
+         </font></Button>
+      <Label layoutX="83.0" layoutY="11.0" text="MARATHON SKILLS 2016" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="69.0" text="Спасибо за вашу регистрацию в качестве бегуна!" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="99.0" text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016!" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="120.0" text="С вами свяжутся по поводу оплаты." textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

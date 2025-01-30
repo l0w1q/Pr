@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: rgb(235, 235, 235);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dan.danpagetopage.FourthController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="65.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Button fx:id="Back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#ButtonBackOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Назад" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Logout" layoutX="529.0" layoutY="16.0" mnemonicParsing="false" onAction="#ButtonLogoutOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Logout" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="48.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Label layoutX="157.0" layoutY="370.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="Register" layoutX="166.0" layoutY="320.0" mnemonicParsing="false" onAction="#ButtonRegisterOnAction" prefHeight="0.0" prefWidth="122.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;" text="Регистрация" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="83.0" layoutY="11.0" text="MARATHON SKILLS 2016" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Otmena" layoutX="303.0" layoutY="320.0" mnemonicParsing="false" onAction="#ButtonOtmenaOnAction" prefHeight="0.0" prefWidth="122.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;" text="Отмена" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="211.0" layoutY="62.0" text="Форма авторизации" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="87.0" text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качестве" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="104.0" text="бегуна" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="162.0" text="Пароль:" textAlignment="CENTER" textFill="#505050" />
+      <Label layoutX="88.0" layoutY="127.0" text="Email:" textAlignment="CENTER" textFill="#505050" />
+      <TextField fx:id="Field1" layoutX="121.0" layoutY="123.0" prefHeight="25.0" prefWidth="173.0" promptText="Ваша электронная почта" />
+      <TextField fx:id="Field2" layoutX="121.0" layoutY="158.0" prefHeight="25.0" prefWidth="173.0" promptText="Пароль" />
+      <Label layoutX="15.0" layoutY="196.0" text="Повторите пароль:" textAlignment="CENTER" textFill="#505050" />
+      <TextField fx:id="Field3" layoutX="121.0" layoutY="192.0" prefHeight="25.0" prefWidth="173.0" promptText="Повторите пароль" />
+      <Label layoutX="90.0" layoutY="228.0" text="Имя:" textAlignment="CENTER" textFill="#505050" />
+      <TextField fx:id="Field4" layoutX="121.0" layoutY="224.0" prefHeight="25.0" prefWidth="173.0" promptText="Имя:" />
+      <Label layoutX="64.0" layoutY="260.0" text="Фамилия:" textAlignment="CENTER" textFill="#505050" />
+      <TextField fx:id="Field5" layoutX="121.0" layoutY="256.0" prefHeight="25.0" prefWidth="173.0" promptText="Фамилия:" />
+      <Label layoutX="92.0" layoutY="292.0" text="Пол:" textAlignment="CENTER" textFill="#505050" />
+      <ChoiceBox fx:id="ViborPola" layoutX="120.0" layoutY="288.0" prefHeight="28.0" prefWidth="173.0" style="-fx-background-color: white; -fx-border-color: rgb(208, 208, 208); -fx-border-width: 1.5;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8c8c8" height="202.0" layoutX="461.0" layoutY="116.0" stroke="#505050" strokeType="INSIDE" width="129.0" />
+      <Label layoutX="506.0" layoutY="208.0" prefHeight="21.0" prefWidth="44.0" text="Фото" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Field6" layoutX="312.0" layoutY="146.0" prefHeight="25.0" prefWidth="129.0" promptText="Photo_logo.jpg">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="315.0" layoutY="127.0" text="Фото файл:" textFill="#505050" />
+      <Button fx:id="OpenFileButton" layoutX="312.0" layoutY="176.0" mnemonicParsing="false" onAction="#ButtonProsmotrOnAction" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 5;" text="Просмотр..." textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="ViborDati" layoutX="312.0" layoutY="239.0" prefHeight="25.0" prefWidth="129.0" promptText="1978-07-16" />
+      <Label layoutX="317.0" layoutY="220.0" prefHeight="17.0" prefWidth="94.0" text="Дата рождения:" textFill="#505050" />
+      <Label layoutX="317.0" layoutY="269.0" text="Страна:" textAlignment="CENTER" textFill="#505050" />
+      <ChoiceBox fx:id="ViborStrani" layoutX="315.0" layoutY="288.0" prefHeight="28.0" prefWidth="129.0" style="-fx-background-color: white; -fx-border-color: rgb(208, 208, 208); -fx-border-width: 1.5;" />
+   </children>
+</Pane>

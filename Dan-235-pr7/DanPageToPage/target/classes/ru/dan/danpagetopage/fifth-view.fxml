@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: rgb(235, 235, 235);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dan.danpagetopage.FifthController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="65.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Button fx:id="Back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#ButtonBackOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Назад" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Logout" layoutX="529.0" layoutY="16.0" mnemonicParsing="false" onAction="#ButtonLogoutOnAction" style="-fx-background-color: rgb(235, 235, 235);" text="Logout" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="48.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0" />
+      <Label layoutX="157.0" layoutY="370.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="Register" layoutX="242.0" layoutY="283.0" mnemonicParsing="false" onAction="#ButtonRegisterOnAction" prefHeight="21.0" prefWidth="81.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;" text="Регистрация" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="10.0" />
+         </font></Button>
+      <Label layoutX="83.0" layoutY="11.0" text="MARATHON SKILLS 2016" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Otmena" layoutX="242.0" layoutY="310.0" mnemonicParsing="false" onAction="#ButtonOtmenaOnAction" prefHeight="21.0" prefWidth="81.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;" text="Отмена" textFill="#ebebeb">
+         <font>
+            <Font name="Open Sans Bold" size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="203.0" layoutY="69.0" text="Регистрация на марафон" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="90.0" text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться на Skills" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="105.0" text="Marathon 2016 проводимом в Москве. Russia. С вами свяжутся после" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="270.0" text="Взнос:" textAlignment="CENTER" textFill="#505050" />
+      <ChoiceBox fx:id="ViborVznosa" layoutX="63.0" layoutY="264.0" prefHeight="28.0" prefWidth="173.0" style="-fx-background-color: white; -fx-border-color: rgb(208, 208, 208); -fx-border-width: 1.5;" />
+      <Label layoutX="156.0" layoutY="120.0" text="регистрации для уточнения оплаты и другой информации." textFill="#505050">
+         <font>
+            <Font name="Open Sans Italic" size="10.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="312.0" text="Сумма взноса:" textAlignment="CENTER" textFill="#505050" />
+      <Label layoutX="13.0" layoutY="136.0" text="Вид марафона" textAlignment="CENTER" textFill="#b4b4b4">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="Check2" layoutX="15.0" layoutY="186.0" mnemonicParsing="false" text="21km Полумарафон ($75)" textFill="#505050" />
+      <CheckBox fx:id="Check3" layoutX="15.0" layoutY="211.0" mnemonicParsing="false" text="5km Малая дистанция ($20)" textFill="#505050" />
+      <CheckBox fx:id="Check1" layoutX="15.0" layoutY="161.0" mnemonicParsing="false" text="42km Полный марафон($145)" textFill="#505050" />
+      <Label layoutX="26.0" layoutY="236.0" text="Детали спонсорства" textAlignment="CENTER" textFill="#b4b4b4">
+         <font>
+            <Font name="Open Sans Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Field1" layoutX="100.0" layoutY="308.0" prefHeight="25.0" prefWidth="136.0" promptText="\$500" />
+      <Label layoutX="338.0" layoutY="138.0" text="Варианты комплектов" textAlignment="CENTER" textFill="#b4b4b4">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="161.0" prefHeight="21.0" prefWidth="116.0" text=" Номер бегуна+" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="209.0" prefHeight="21.0" prefWidth="87.0" text="Вариант A +" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="259.0" prefHeight="21.0" prefWidth="81.0" text="Вариант B" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="184.0" prefHeight="21.0" prefWidth="98.0" text="RFID браслет." textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="233.0" prefHeight="21.0" prefWidth="186.0" text="бейсболка + бутылка воды." textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="282.0" prefHeight="21.0" prefWidth="244.0" text="+футболка + сувенирный буклет." textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Regular" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Kruzok2" layoutX="312.0" layoutY="209.0" mnemonicParsing="false" text="Вариант B ($20):" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Kruzok" layoutX="312.0" layoutY="159.0" mnemonicParsing="false" text="Вариант A ($0):" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Kruzok3" layoutX="312.0" layoutY="259.0" mnemonicParsing="false" text="Вариант C ($45):" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="377.0" layoutY="304.0" text="Регистрационный взнос" textAlignment="CENTER" textFill="#b4b4b4">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="VznolLabel" layoutX="401.0" layoutY="309.0" text="\$185" textAlignment="CENTER" textFill="#505050">
+         <font>
+            <Font name="Open Sans Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
